@@ -3,7 +3,7 @@ trigger AccountTrigger on Account (before insert, before update, before delete, 
     switch on trigger.operationType{
         when BEFORE_INSERT 
         { 
-            
+            AccountHandler.UniqueAccountVerification(trigger.new);
         }
         when BEFORE_UPDATE 
         { 
