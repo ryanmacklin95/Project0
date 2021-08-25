@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "First project",
+  "namespace": "",
+  "sfdcLoginUrl": "https://brave-koala-czd1yy-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "52.0"
+}
