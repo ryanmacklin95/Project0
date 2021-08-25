@@ -2,11 +2,7 @@ trigger SupplyTrigger on Supply__c (before insert, before update, before delete,
 {
 
     switch on trigger.operationType{
-        when BEFORE_INSERT 
-        { 
-            SupplyHandler.AddDefaultFields(trigger.new);
-            
-        }
+       
         when BEFORE_UPDATE 
         { 
 
@@ -28,6 +24,11 @@ trigger SupplyTrigger on Supply__c (before insert, before update, before delete,
         when AFTER_UNDELETE
         {
 
+        }
+         when BEFORE_INSERT 
+        { 
+            SupplyHandler.AddDefaultFields(trigger.new);
+            
         }
     }
 }

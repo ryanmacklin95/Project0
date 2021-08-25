@@ -2,11 +2,7 @@ trigger ContactTrigger on Contact (before insert, before update, before delete, 
 {
 
     switch on trigger.operationType{
-        when BEFORE_INSERT 
-        { 
-            ContactHandler.setRecordType(trigger.new);
-            ContactHandler.newContact(trigger.new);
-        }
+        
         when BEFORE_UPDATE 
         { 
         }
@@ -26,6 +22,11 @@ trigger ContactTrigger on Contact (before insert, before update, before delete, 
         when AFTER_UNDELETE
         {
 
+        }
+        when BEFORE_INSERT 
+        { 
+            ContactHandler.setRecordType(trigger.new);
+            ContactHandler.newContact(trigger.new);
         }
     }
 }
