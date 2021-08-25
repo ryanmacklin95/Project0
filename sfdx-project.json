@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "GroceryStore",
+  "namespace": "",
+  "sfdcLoginUrl": "https://cunning-fox-7wdb83-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "52.0"
+}
